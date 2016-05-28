@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   
   # get "welcome/about", to: "welcome#about"
   get "about", to: "welcome#about"
+  
+  resources :articles
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
