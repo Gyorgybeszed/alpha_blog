@@ -41,7 +41,6 @@ class UsersController < ApplicationController
   end
   
   def destroy
-    set_user
     @user.destroy
     flash[:danger] = "User and all articles created by User have been deleted"
     redirect_to users_path
